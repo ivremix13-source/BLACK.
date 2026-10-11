@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="BLACK — منصة فري فاير للحساسية والإعدادات والاحتراف.">
+    <title>BLACK | FREE FIRE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-effects">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- شاشة البداية -->
+    <section id="intro" class="intro-screen">
+        <div class="intro-logo">B<span>.</span></div>
+        <h1>BLACK</h1>
+        <p>ENTER THE ELITE</p>
+        <div class="loading-line">
+            <span></span>
+        </div>
+        <small>INITIALIZING SYSTEM...</small>
+    </section>
+
+    <!-- رأس الموقع -->
+    <header class="topbar">
+        <a href="#" class="brand" onclick="showHome(); return false;">
+            <span class="brand-icon">B</span>
+            <span>
+                <strong>BLACK</strong>
+                <small>FREE FIRE PLATFORM</small>
+            </span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="فتح القائمة">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav id="navigation">
+            <a href="#home" onclick="showHome()">الرئيسية</a>
+            <a href="#features" onclick="showHome()">الخدمات</a>
+            <a href="#contact" onclick="openPage('contactPage')">التواصل</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- الصفحة الرئيسية -->
+        <section id="home" class="page active-page">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        THE NEXT LEVEL
+                    </div>
+
+                    <p class="hero-overline">WELCOME TO THE WORLD OF</p>
+                    <h1 class="hero-title">BLACK<span>.</span></h1>
+                    <h2>اصنع أسلوبك. سيطر على ساحة المعركة.</h2>
+
+                    <p class="hero-description">
+                        منصتك الخاصة لإعدادات فري فاير، الحساسية،
+                        أكواد HUD وكل ما تحتاجه لتطوير أسلوب لعبك.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="primary-button" onclick="scrollToFeatures()">
+                            اكتشف المنصة <span>↙</span>
+                        </button>
+                        <button class="secondary-button" onclick="openPage('aboutPage')">
+                            اكتشف BLACK
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <strong>01</strong>
+                            <span>إعدادات خاصة</span>
+                        </div>
+                        <div>
+                            <strong>PRO</strong>
+                            <span>واجهة احترافية</span>
+                        </div>
+                        <div>
+                            <strong>FF</strong>
+                            <span>عالم فري فاير</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-ring ring-one"></div>
+                    <div class="visual-ring ring-two"></div>
+
+                    <div class="visual-card">
+                        <div class="visual-top">
+                            <span>BLACK SYSTEM</span>
+                            <span class="live-dot"></span>
+                        </div>
+
+                        <div class="visual-emblem">
+                            <div class="emblem-inner">B</div>
+                        </div>
+
+                        <div class="visual-name">BLACK<span> ELITE</span></div>
+                        <div class="visual-line"></div>
+                        <div class="visual-bottom">
+                            <span>PRECISION</span>
+                            <span>PERFORMANCE</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-tag tag-top">⚡ PERFORMANCE</div>
+                    <div class="floating-tag tag-bottom">◈ ELITE SETTINGS</div>
+                </div>
+            </div>
+
+            <section id="features" class="features-section">
+                <div class="section-heading">
+                    <div class="section-label">EXPLORE THE PLATFORM</div>
+                    <h2>كل ما تحتاجه <span>في مكان واحد</span></h2>
+                    <p>اختر القسم الذي تريد الدخول إليه.</p>
+                </div>
+
+                <div class="features-grid">
+
+                    <button class="feature-card" onclick="openPage('sensitivityPage')">
+                        <div class="card-number">01 / SETTINGS</div>
+                        <div class="feature-icon">🎯</div>
+                        <h3>الحساسية</h3>
+                        <p>احصل على إعدادات حساسية مقترحة حسب جهازك وأسلوب لعبك.</p>
+                        <span class="card-link">استكشف الإعدادات <b>←</b></span>
+                        <div class="card-glow"></div>
+                    </button>
+
+                    <button class="feature-card" onclick="openPage('downloadPage')">
+                        <div class="card-number">02 / DOWNLOAD</div>
+                        <div class="feature-icon">⇩</div>
+                        <h3>تنزيل اللعبة</h3>
+                        <p>انتقل إلى رابط تنزيل اللعبة الذي وفره صاحب المنصة.</p>
+                        <span class="card-link">عرض رابط التنزيل <b>←</b></span>
+                        <div class="card-glow"></div>
+                    </button>
+
+                    <button class="feature-card" onclick="openPage('blackSettingsPage')">
+                        <div class="card-number">03 / BLACK EXCLUSIVE</div>
+                        <div class="feature-icon">◈</div>
+                        <h3>إعدادات BLACK</h3>
+                        <p>كود HUD وإعدادات مقترحة لجهاز Samsung S23 Ultra.</p>
+                        <span class="card-link">عرض الإعدادات <b>←</b></span>
+                        <div class="card-glow"></div>
+                    </button>
+
+                    <button class="feature-card" onclick="openPage('contactPage')">
+                        <div class="card-number">04 / COMMUNITY</div>
+                        <div class="feature-icon">⌘</div>
+                        <h3>تواصل مع المطور</h3>
+                        <p>تابع BLACK وتواصل عبر منصات التواصل الاجتماعي.</p>
+                        <span class="card-link">تواصل الآن <b>←</b></span>
+                        <div class="card-glow"></div>
+                    </button>
+
+                    <button class="feature-card store-card" onclick="openPage('storePage')">
+                        <div class="card-number">05 / BLACK STORE</div>
+                        <div class="feature-icon">✧</div>
+                        <h3>المتجر الإلكتروني</h3>
+                        <p>مساحة مخصصة لخدمات ومنتجات BLACK المستقبلية.</p>
+                        <span class="coming-badge">قريباً</span>
+                        <span class="card-link">اكتشف المتجر <b>←</b></span>
+                        <div class="card-glow"></div>
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="banner">
+                <div>
+                    <span class="section-label">BLACK EXPERIENCE</span>
+                    <h2>التفاصيل تصنع الفرق.</h2>
+                    <p>اكتشف إعداداتك واصنع تجربتك الخاصة.</p>
+                </div>
+                <div class="banner-symbol">B<span>.</span></div>
+            </section>
+        </section>
+
+        <!-- صفحة الحساسية -->
+        <section id="sensitivityPage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="inner-heading">
+                <span class="section-label">PERSONAL SETTINGS</span>
+                <h1>مختبر <span>الحساسية</span></h1>
+                <p>أنشئ إعدادات مقترحة بناءً على جهازك وطريقة لعبك.</p>
+            </div>
+
+            <div class="panel">
+                <label for="device">نوع الجهاز</label>
+                <select id="device">
+                    <option value="balanced">جهاز متوسط</option>
+                    <option value="powerful">جهاز قوي</option>
+                    <option value="s23">Samsung S23 Ultra</option>
+                    <option value="iphone">iPhone</option>
+                    <option value="other">جهاز آخر</option>
+                </select>
+
+                <label for="playStyle">أسلوب اللعب</label>
+                <select id="playStyle">
+                    <option value="balanced">متوازن</option>
+                    <option value="headshot">تركيز على الهيدشوت</option>
+                    <option value="rush">الاندفاع والقتال القريب</option>
+                    <option value="long">القتال بعيد المدى</option>
+                </select>
+
+                <label for="sensitivityLevel">مستوى الحساسية المفضل</label>
+                <select id="sensitivityLevel">
+                    <option value="high">مرتفع</option>
+                    <option value="medium">متوسط</option>
+                    <option value="low">منخفض</option>
+                </select>
+
+                <button class="primary-button full-button" onclick="generateSensitivity()">
+                    إنشاء الإعدادات <span>✦</span>
+                </button>
+
+                <div id="sensitivityResult" class="result-box hidden">
+                    <div class="result-heading">
+                        <h3>إعداداتك المقترحة</h3>
+                        <span>BLACK LAB</span>
+                    </div>
+                    <div id="sensitivityValues"></div>
+                    <p class="note">
+                        هذه قيم تجريبية للبدء وليست إعدادات مضمونة.
+                        جرّبها داخل التدريب وعدّلها حسب استجابة جهازك.
+                    </p>
+                    <button class="secondary-button full-button" onclick="copySensitivity()">
+                        نسخ الإعدادات
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- صفحة التنزيل -->
+        <section id="downloadPage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="inner-heading">
+                <span class="section-label">DOWNLOAD CENTER</span>
+                <h1>مركز <span>التنزيل</span></h1>
+                <p>رابط التنزيل المضاف إلى منصة BLACK.</p>
+            </div>
+
+            <div class="download-panel">
+                <div class="download-icon">⇩</div>
+                <div class="download-tag">EXTERNAL LINK</div>
+                <h2>FREE FIRE</h2>
+                <p>اضغط على الزر للانتقال إلى صفحة التنزيل الخارجية.</p>
+                <div class="warning-box">
+                    تنبيه: تحقّق من مصدر الملف وسلامته وتوافقه مع شروط اللعبة قبل تنزيله أو تثبيته.
+                </div>
+                <a class="primary-button full-button link-button"
+                   href="https://www.mediafire.com/file/oysse988prq88oa/FREE+FIRE+HYPERS+V8A.apk/file"
+                   target="_blank" rel="noopener noreferrer">
+                    الانتقال إلى التنزيل ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- إعدادات BLACK -->
+        <section id="blackSettingsPage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="inner-heading">
+                <span class="section-label">BLACK EXCLUSIVE</span>
+                <h1>الإعدادات <span>الخاصة</span></h1>
+                <p>إعدادات مقترحة وكود HUD يمكنك نسخه.</p>
+            </div>
+
+            <div class="panel settings-panel">
+                <div class="setting-header">
+                    <div>
+                        <span class="section-label">DEVICE PROFILE</span>
+                        <h2>Samsung S23 Ultra</h2>
+                    </div>
+                    <span class="device-badge">S23 ULTRA</span>
+                </div>
+
+                <div class="setting-row">
+                    <span>ملف الجهاز</span>
+                    <strong>إعدادات قابلة للتخصيص</strong>
+                </div>
+
+                <div class="setting-row">
+                    <span>جودة الرسومات</span>
+                    <strong>حسب الأداء والاستقرار</strong>
+                </div>
+
+                <div class="setting-row">
+                    <span>معدل الإطارات</span>
+                    <strong>أعلى خيار مستقر متاح</strong>
+                </div>
+
+                <div class="setting-row">
+                    <span>حساسية اللمس</span>
+                    <strong>اضبطها داخل اللعبة</strong>
+                </div>
+
+                <div class="hud-box">
+                    <span class="section-label">HUD SHARE CODE</span>
+                    <h3>كود HUD الخاص بـ BLACK</h3>
+                    <code id="hudCode">#FFHUDT6O3jrFZIvVPo7eM</code>
+                    <button class="primary-button full-button" onclick="copyHUD()">
+                        <span id="copyHudText">نسخ كود HUD</span> ⧉
+                    </button>
+                </div>
+
+                <p class="note">
+                    قد يختلف أداء الإعدادات حسب إصدار اللعبة وتفضيلاتك.
+                    تأكد من توافق كود HUD مع إصدار اللعبة قبل استخدامه.
+                </p>
+            </div>
+        </section>
+
+        <!-- التواصل -->
+        <section id="contactPage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="inner-heading">
+                <span class="section-label">CONNECT WITH BLACK</span>
+                <h1>عالم <span>BLACK</span></h1>
+                <p>تابع الحسابات وتواصل عبر الروابط التالية.</p>
+            </div>
+
+            <div class="social-grid">
+                <a class="social-card whatsapp" href="https://wa.me/249999498099"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">W</span>
+                    <span><strong>WhatsApp</strong><small>تواصل مباشر</small></span>
+                    <b>↗</b>
+                </a>
+
+                <a class="social-card tiktok"
+                   href="https://www.tiktok.com/@black_a249"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">♪</span>
+                    <span><strong>TikTok</strong><small>تابع BLACK</small></span>
+                    <b>↗</b>
+                </a>
+
+                <a class="social-card discord"
+                   href="https://discord.gg/MVJz4VVUH"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="social-icon">D</span>
+                    <span><strong>Discord</strong><small>انضم إلى المجتمع</small></span>
+                    <b>↗</b>
+                </a>
+            </div>
+
+            <p class="note">
+                تأكد من صحة رقم واتساب والرابط الخاص بحساب تيك توك قبل نشر الموقع.
+            </p>
+        </section>
+
+        <!-- المتجر -->
+        <section id="storePage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="store-coming">
+                <div class="store-symbol">✧</div>
+                <span class="section-label">BLACK EXCLUSIVE STORE</span>
+                <h1>شيء استثنائي <span>قادم.</span></h1>
+                <p>
+                    نعمل على تجهيز متجر BLACK.
+                    ستظهر الخدمات والمنتجات هنا عند إطلاق المتجر.
+                </p>
+                <div class="coming-badge">COMING SOON</div>
+                <button class="secondary-button" onclick="showHome()">العودة إلى الرئيسية</button>
+            </div>
+        </section>
+
+        <!-- عن المنصة -->
+        <section id="aboutPage" class="page inner-page">
+            <button class="back-button" onclick="goBack()">→ العودة للرئيسية</button>
+
+            <div class="store-coming about-content">
+                <div class="intro-logo small-logo">B<span>.</span></div>
+                <span class="section-label">ABOUT THE BRAND</span>
+                <h1>BLACK<span>.</span></h1>
+                <p>
+                    منصة مستقلة لعشاق فري فاير، تجمع الإعدادات المقترحة
+                    والأدوات والمحتوى في واجهة واحدة بطابع أسود وذهبي.
+                </p>
+                <button class="primary-button" onclick="showHome()">استكشف المنصة ←</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">BLACK<span>.</span></div>
+        <p>PRECISION · PERFORMANCE · STYLE</p>
+        <small>© <span id="year"></span> BLACK. جميع الحقوق محفوظة.</small>
+        <small class="disclaimer">
+            هذا موقع مستقل من صنع المعجبين، وليس موقعًا رسميًا تابعًا للعبة Free Fire.
+        </small>
+    </footer>
+
+    <div id="toast" class="toast">تم النسخ بنجاح</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
