@@ -1,52 +1,1052 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11152e">
-  <meta name="description" content="BLACK ARENA — مساحة عصرية لعشاق Free Fire وإعدادات الهواتف والأداء.">
-  <title>BLACK ARENA — العب بأسلوبك</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="BLACK ARENA — وجهتك لاكتشاف إعدادات Free Fire، الحساسية، الأجهزة، والأداء.">
+
+  <title>BLACK ARENA — Enter Your Arena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body data-page="home">
-  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="BLACK ARENA الرئيسية"><span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M13 12h23c11 0 17 5 17 14 0 6-3 10-9 12 7 1 11 6 11 13 0 10-7 15-19 15H13V12Zm13 10v11h9c4 0 6-2 6-6s-2-5-6-5h-9Zm0 21v12h10c4 0 7-2 7-6s-3-6-7-6H26Z" transform="translate(0 -7)" fill="currentColor"/><path d="M8 52 19 41l8 7 15-17 7 6" fill="none" stroke="#52f4df" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-copy"><strong>BLACK<span> ARENA</span></strong><small>PLAY • TUNE • LEVEL UP</small></span></a>
-    <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
-    <nav class="main-nav" aria-label="القائمة الرئيسية">
-      <a href="index.html" data-nav="home">الرئيسية</a><a href="sensitivity.html" data-nav="sensitivity">مختبر الحساسية</a><a href="aim.html" data-nav="aim">إعدادات التحكم</a><a href="devices.html" data-nav="devices">مكتبة الأجهزة</a><a href="performance.html" data-nav="performance">الأداء</a><a href="guides.html" data-nav="guides">دليل اللاعب</a>
-    </nav>
-    <a class="header-cta" href="contact.html">انضم للمجتمع <span>↗</span></a>
+
+  <!-- خلفية الموقع -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <!-- شاشة البداية -->
+  <div class="intro-screen" id="introScreen" aria-label="BLACK ARENA">
+
+    <div class="intro-content">
+
+      <div class="intro-emblem">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M25 18H55C72 18 81 27 81 40C81 49 76 55 67 58C78 60 84 67 84 78C84 93 73 99 56 99H25V18Z"
+                fill="currentColor"
+                transform="translate(0 -8) scale(.9)"/>
+
+          <path d="M18 70L39 49L52 61L79 31"
+                stroke="#52F4DF"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="intro-wordmark">
+        <span>BLACK</span>
+        <span class="wordmark-accent">ARENA</span>
+      </div>
+
+      <p>YOUR GAME. YOUR RULES.</p>
+
+      <div class="intro-progress">
+        <span></span>
+      </div>
+
+      <small id="introStatus">PREPARING YOUR EXPERIENCE</small>
+
+    </div>
+  </div>
+
+
+  <!-- شريط التنقل -->
+  <header class="site-header" id="siteHeader">
+
+    <div class="header-inner">
+
+      <a class="brand" href="index.html" aria-label="BLACK ARENA الرئيسية">
+
+        <span class="brand-symbol">
+          <svg viewBox="0 0 60 60" fill="none" aria-hidden="true">
+            <path d="M13 8H32C44 8 51 14 51 24C51 31 47 35 40 37C48 39 53 44 53 51C53 61 45 66 32 66H13V8Z"
+                  fill="currentColor"
+                  transform="translate(0 -7) scale(.9)"/>
+
+            <path d="M8 44L22 31L30 38L47 19"
+                  stroke="#52F4DF"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+          </svg>
+        </span>
+
+        <span class="brand-text">
+          <strong>BLACK<span> ARENA</span></strong>
+          <small>PLAY · TUNE · LEVEL UP</small>
+        </span>
+
+      </a>
+
+
+      <button class="menu-toggle"
+              id="menuToggle"
+              aria-label="فتح القائمة"
+              aria-expanded="false"
+              aria-controls="mainNav">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+
+      <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+
+        <a href="index.html" data-nav="home">الرئيسية</a>
+
+        <a href="sensitivity.html" data-nav="sensitivity">
+          مختبر الحساسية
+        </a>
+
+        <a href="aim.html" data-nav="aim">
+          إعدادات التحكم
+        </a>
+
+        <a href="devices.html" data-nav="devices">
+          الأجهزة
+        </a>
+
+        <a href="performance.html" data-nav="performance">
+          الأداء
+        </a>
+
+        <a href="guides.html" data-nav="guides">
+          الدليل
+        </a>
+
+      </nav>
+
+
+      <a href="contact.html" class="header-cta">
+        <span>تواصل معنا</span>
+        <span class="cta-arrow">↗</span>
+      </a>
+
+    </div>
+
   </header>
+
+
   <main>
-    <section class="hero wrap">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> مساحة اللاعب تبدأ من هنا <span class="eyebrow-line"></span></div>
-        <h1>العب بذكاء.<br><span class="gradient-text">تطوّر بطريقتك.</span></h1>
-        <p class="hero-description">مرحبًا بك في BLACK ARENA — تجربة رقمية لعشاق الألعاب، تجمع أدلة الأجهزة وإعدادات التجربة وملاحظات الأداء في واجهة واحدة مصممة بعناية.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="sensitivity.html">اكتشف إعداداتك <span>↗</span></a><a class="btn btn-quiet" href="guides.html"><span class="play-icon">▶</span> استكشف الدليل</a></div>
-        <div class="hero-proof"><div class="avatar-stack"><span>B</span><span>FF</span><span>+</span></div><div><strong>مساحة لكل لاعب</strong><small>من أول تجربة إلى مستوى أكثر ثباتًا</small></div></div>
+
+    <!-- واجهة البطولة -->
+    <section class="hero section-container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span>THE NEXT LEVEL STARTS HERE</span>
+        </div>
+
+
+        <h1>
+          لا تلعب فقط.
+          <br>
+          <span class="gradient-text">اصنع أسلوبك.</span>
+        </h1>
+
+
+        <p class="hero-description">
+          اكتشف إعدادات تناسب جهازك، وافهم طريقة تحسين تجربتك،
+          وتعرّف على التفاصيل التي تساعدك على اللعب براحة وثبات
+          أكبر مع BLACK ARENA.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a href="sensitivity.html" class="button button-primary">
+            <span>اكتشف إعداداتك</span>
+            <span class="button-icon">↗</span>
+          </a>
+
+          <a href="devices.html" class="button button-secondary">
+            <span class="button-play">▷</span>
+            <span>استكشف الأجهزة</span>
+          </a>
+
+        </div>
+
+
+        <div class="hero-meta">
+
+          <div class="meta-icon">B</div>
+
+          <div>
+            <strong>مصممة لعشاق التفاصيل</strong>
+            <span>إعدادات · أجهزة · أداء · معرفة</span>
+          </div>
+
+          <div class="meta-divider"></div>
+
+          <div class="meta-status">
+            <span class="status-light"></span>
+            <span>EXPLORE YOUR POTENTIAL</span>
+          </div>
+
+        </div>
+
       </div>
-      <div class="hero-art">
-        <div class="hero-image-frame"><img class="hero-image" src="https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202210/2d6e7a11b79218c9b29167f77a9b92eb.jpg" alt="شخصيات من لعبة Free Fire في مشهد مستقبلي" fetchpriority="high"><div class="image-vignette"></div><div class="image-tag"><span class="live-dot"></span> GAME CULTURE / 01</div><div class="image-caption"><small>FEATURED UNIVERSE</small><strong>FREE FIRE</strong><span>حيث تبدأ كل جولة بقصة جديدة</span></div></div>
-        <div class="float-card float-card-top"><span class="float-icon icon-cyan">✦</span><div><small>YOUR NEXT LEVEL</small><strong>ابدأ من إعداداتك</strong></div></div>
-        <div class="float-card float-card-bottom"><span class="float-icon icon-purple">⌁</span><div><small>DEVICE LAB</small><strong>اعرف قدرات جهازك</strong></div><span class="mini-bars"><i></i><i></i><i></i><i></i><i></i></span></div>
-        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+
+
+      <!-- اللوحة الفنية -->
+      <div class="hero-visual">
+
+        <div class="visual-grid"></div>
+
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+
+        <div class="visual-topline">
+          <span>BLACK ARENA</span>
+          <span>EST. 2026</span>
+        </div>
+
+
+        <div class="hero-artwork">
+
+          <div class="art-glow"></div>
+
+          <div class="art-core">
+            <svg viewBox="0 0 220 220" fill="none" aria-label="شعار BLACK ARENA">
+              <path d="M64 25H115C150 25 169 43 169 72C169 94 157 108 134 115C162 120 177 139 177 163C177 196 153 210 116 210H64V25Z"
+                    fill="url(#emblemGradient)"/>
+
+              <path d="M42 157L82 118L108 140L164 78"
+                    stroke="#52F4DF"
+                    stroke-width="11"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+
+              <defs>
+                <linearGradient id="emblemGradient" x1="64" y1="25" x2="177" y2="210">
+                  <stop stop-color="#B6C9FF"/>
+                  <stop offset="1" stop-color="#7767FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+
+          <div class="art-label label-top">
+            <span class="label-point"></span>
+            PRECISION LAB
+          </div>
+
+          <div class="art-label label-bottom">
+            <span>BA / 001</span>
+            <span>PERFORMANCE CULTURE</span>
+          </div>
+
+        </div>
+
+
+        <div class="floating-panel floating-panel-top">
+
+          <div class="panel-icon cyan-icon">✳</div>
+
+          <div>
+            <small>YOUR NEXT MOVE</small>
+            <strong>ابدأ من إعداداتك</strong>
+          </div>
+
+          <span class="panel-arrow">↗</span>
+
+        </div>
+
+
+        <div class="floating-panel floating-panel-bottom">
+
+          <div class="panel-icon purple-icon">⌁</div>
+
+          <div>
+            <small>DEVICE INTELLIGENCE</small>
+            <strong>اعرف قدرات جهازك</strong>
+          </div>
+
+          <span class="panel-indicator"></span>
+
+        </div>
+
+
+        <div class="visual-index">
+          <span>01</span>
+          <span class="index-line"></span>
+          <span>04</span>
+        </div>
+
       </div>
+
     </section>
-    <section class="ticker"><div class="ticker-track"><span>PLAY WITH PURPOSE</span><b>✳</b><span>FIND YOUR FLOW</span><b>✳</b><span>MAKE EVERY SESSION COUNT</span><b>✳</b><span>PLAY WITH PURPOSE</span><b>✳</b><span>FIND YOUR FLOW</span><b>✳</b></div></section>
-    <section class="section wrap">
-      <div class="section-heading"><div><span class="kicker">YOUR PERSONAL HUB</span><h2>كل ما تحتاجه، <span class="gradient-text">بطريقة أذكى.</span></h2></div><p>تنقّل بين صفحات مستقلة؛ كل صفحة لها هدف واضح وتجربة مريحة على الهاتف والكمبيوتر.</p></div>
+
+
+
+    <!-- الشريط المتحرك -->
+    <div class="marquee" aria-label="شعار الموقع">
+
+      <div class="marquee-track">
+
+        <span>PLAY WITH PURPOSE</span>
+        <span class="marquee-star">✳</span>
+
+        <span>FIND YOUR FLOW</span>
+        <span class="marquee-star">✳</span>
+
+        <span>KNOW YOUR DEVICE</span>
+        <span class="marquee-star">✳</span>
+
+        <span>LEVEL UP YOUR GAME</span>
+        <span class="marquee-star">✳</span>
+
+        <span>PLAY WITH PURPOSE</span>
+        <span class="marquee-star">✳</span>
+
+        <span>FIND YOUR FLOW</span>
+        <span class="marquee-star">✳</span>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- صفحات الموقع -->
+    <section class="features section-container">
+
+      <div class="section-heading">
+
+        <div>
+
+          <span class="section-kicker">THE ARENA ECOSYSTEM</span>
+
+          <h2>
+            كل تفصيلة لها
+            <span class="gradient-text">هدف.</span>
+          </h2>
+
+        </div>
+
+        <p>
+          أدوات وأدلة منظمة، لكل منها صفحة مستقلة وتجربة واضحة،
+          لتصل إلى ما تحتاج إليه دون ازدحام أو تعقيد.
+        </p>
+
+      </div>
+
+
+
       <div class="feature-grid">
-        <a class="feature-card feature-card-large" href="sensitivity.html"><div class="card-topline"><span class="card-number">01 / LAB</span><span class="card-arrow">↗</span></div><div class="feature-visual visual-sensitivity"><div class="dial dial-one"></div><div class="dial dial-two"></div><span class="visual-label">SENSITIVITY<br>LAB</span><span class="visual-spark">✦</span></div><div class="feature-content"><span class="feature-tag">PERSONAL SETUP</span><h3>مختبر الحساسية</h3><p>استكشف نقطة بداية مناسبة لجهازك، ثم عدّل القيم تدريجيًا حسب شعورك داخل اللعبة.</p><span class="text-link">ابدأ التجربة <b>←</b></span></div></a>
-        <a class="feature-card" href="aim.html"><div class="card-topline"><span class="card-number">02 / CONTROL</span><span class="card-arrow">↗</span></div><div class="feature-visual visual-control"><div class="control-orb">◎</div><div class="control-ring"></div><span class="control-chip">HUD</span></div><div class="feature-content"><span class="feature-tag">COMFORT FIRST</span><h3>إعدادات التحكم</h3><p>تعرّف على مفاهيم ترتيب الأزرار وحجمها وراحة اليد.</p><span class="text-link">عرض الصفحة <b>←</b></span></div></a>
-        <a class="feature-card" href="devices.html"><div class="card-topline"><span class="card-number">03 / DEVICES</span><span class="card-arrow">↗</span></div><div class="feature-visual visual-devices"><div class="phone phone-back"></div><div class="phone phone-front"><span></span></div><span class="device-signal">⌁</span></div><div class="feature-content"><span class="feature-tag">KNOW YOUR GEAR</span><h3>مكتبة الأجهزة</h3><p>قارن بين فئات الهواتف وتعرّف على المواصفات التي تهم تجربة اللعب.</p><span class="text-link">اكتشف الأجهزة <b>←</b></span></div></a>
-        <a class="feature-card" href="performance.html"><div class="card-topline"><span class="card-number">04 / PERFORMANCE</span><span class="card-arrow">↗</span></div><div class="feature-visual visual-performance"><div class="performance-grid"></div><div class="performance-number">FPS<span>+</span></div><div class="performance-wave"></div></div><div class="feature-content"><span class="feature-tag">SMOOTHER SESSIONS</span><h3>دليل الأداء</h3><p>افهم معدل الإطارات والحرارة والبطارية، واختر إعدادات متوازنة لجهازك.</p><span class="text-link">حسّن تجربتك <b>←</b></span></div></a>
+
+
+        <!-- الحساسية -->
+        <a href="sensitivity.html"
+           class="feature-card feature-large">
+
+          <div class="feature-card-top">
+            <span>01 / PRECISION</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration sensitivity-illustration">
+
+            <div class="target target-outer"></div>
+            <div class="target target-middle"></div>
+            <div class="target target-inner"></div>
+
+            <div class="target-center"></div>
+
+            <span class="target-caption">PRECISION</span>
+
+            <div class="target-coordinate coordinate-one">X: 088</div>
+            <div class="target-coordinate coordinate-two">Y: 094</div>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">PERSONAL SETUP</span>
+
+            <h3>مختبر الحساسية</h3>
+
+            <p>
+              أنشئ نقطة بداية مقترحة لإعدادات الحساسية،
+              ثم اختبرها وعدّلها حسب جهازك وأسلوب لعبك.
+            </p>
+
+            <span class="feature-link">
+              افتح المختبر <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- التحكم -->
+        <a href="aim.html" class="feature-card">
+
+          <div class="feature-card-top">
+            <span>02 / CONTROL</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration control-illustration">
+
+            <div class="control-circle circle-one"></div>
+            <div class="control-circle circle-two"></div>
+
+            <div class="control-cross">+</div>
+
+            <div class="control-chip">HUD</div>
+
+            <div class="control-chip chip-two">AIM</div>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">PLAY COMFORTABLY</span>
+
+            <h3>إعدادات التحكم</h3>
+
+            <p>
+              تعرّف على توزيع الأزرار وحجم زر الإطلاق
+              ومبادئ ترتيب واجهة التحكم.
+            </p>
+
+            <span class="feature-link">
+              استكشف التحكم <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- الأجهزة -->
+        <a href="devices.html" class="feature-card">
+
+          <div class="feature-card-top">
+            <span>03 / DEVICES</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration devices-illustration">
+
+            <div class="device-phone phone-back"></div>
+
+            <div class="device-phone phone-front">
+
+              <div class="phone-screen">
+
+                <span class="phone-camera"></span>
+
+                <div class="phone-screen-bars">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="device-chip">DEVICE LAB</div>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">KNOW YOUR GEAR</span>
+
+            <h3>مكتبة الأجهزة</h3>
+
+            <p>
+              استكشف مواصفات الهواتف وابحث عن جهازك
+              وتعرّف على العوامل المؤثرة في الأداء.
+            </p>
+
+            <span class="feature-link">
+              اكتشف الأجهزة <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- الأداء -->
+        <a href="performance.html" class="feature-card">
+
+          <div class="feature-card-top">
+            <span>04 / PERFORMANCE</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration performance-illustration">
+
+            <div class="performance-bars">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <div class="performance-reading">
+              <strong>FPS</strong>
+              <span>PERFORMANCE</span>
+            </div>
+
+            <div class="performance-orbit"></div>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">SMOOTHER SESSIONS</span>
+
+            <h3>دليل الأداء</h3>
+
+            <p>
+              افهم معدل الإطارات والحرارة واستهلاك البطارية
+              وكيفية اختيار إعدادات متوازنة.
+            </p>
+
+            <span class="feature-link">
+              حسّن تجربتك <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- الدليل -->
+        <a href="guides.html" class="feature-card">
+
+          <div class="feature-card-top">
+            <span>05 / KNOWLEDGE</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration guides-illustration">
+
+            <div class="guide-orbit"></div>
+
+            <div class="guide-book">
+              <span>BA</span>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <span class="guide-star">✦</span>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">LEARN THE DETAILS</span>
+
+            <h3>دليل اللاعب</h3>
+
+            <p>
+              تعرّف على المفاهيم الأساسية وخطوات تحسين
+              تجربتك بطريقة منظمة.
+            </p>
+
+            <span class="feature-link">
+              اقرأ الدليل <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- عن الموقع -->
+        <a href="about.html" class="feature-card">
+
+          <div class="feature-card-top">
+            <span>06 / OUR STORY</span>
+            <span class="card-arrow">↗</span>
+          </div>
+
+
+          <div class="feature-illustration about-illustration">
+
+            <div class="about-emblem">B</div>
+
+            <div class="about-orbit orbit-a"></div>
+            <div class="about-orbit orbit-b"></div>
+
+            <span class="about-caption">BLACK ARENA</span>
+
+          </div>
+
+
+          <div class="feature-card-body">
+
+            <span class="feature-category">BUILT FOR PLAYERS</span>
+
+            <h3>عن BLACK ARENA</h3>
+
+            <p>
+              اكتشف فكرة المشروع ورؤيته والمبادئ التي
+              توجه تطوير تجربة الموقع.
+            </p>
+
+            <span class="feature-link">
+              اكتشف قصتنا <b>←</b>
+            </span>
+
+          </div>
+
+        </a>
+
+
       </div>
+
     </section>
-    <section class="showcase wrap"><div class="showcase-image"><img src="https://cdn.wildflamestudio.com/common/web_event/official2.ff.garena.all/202210/c23d656a45bc5c75cd77d53065605fe0.jpg" alt="مشهد فني رسمي من Free Fire" loading="lazy"><span class="showcase-badge">ART / FREE FIRE</span></div><div class="showcase-copy"><span class="kicker">BUILT FOR THE COMMUNITY</span><h2>ليست مجرد إعدادات.<br><span class="gradient-text">إنها طريقتك في اللعب.</span></h2><p>BLACK ARENA مساحة مستقلة للاكتشاف والتجربة. لا توجد قيمة واحدة تناسب الجميع؛ جهازك وطريقة إمساكك بالهاتف وتفضيلاتك كلها تصنع الفرق.</p><a class="btn btn-secondary" href="about.html">تعرّف على BLACK <span>↗</span></a></div></section>
-    <section class="community-band wrap"><div class="community-icon">✳</div><div><span class="kicker">THE COMMUNITY IS YOURS</span><h2>خلّنا نسمع منك.</h2><p>اقتراحك قد يكون الفكرة التالية في BLACK ARENA.</p></div><a class="btn btn-light" href="contact.html">تواصل معنا <span>↗</span></a></section>
+
+
+
+    <!-- مختبر تفاعلي -->
+    <section class="lab-section section-container">
+
+      <div class="lab-panel">
+
+        <div class="lab-background-grid"></div>
+
+        <div class="lab-copy">
+
+          <span class="section-kicker">INTERACTIVE EXPERIENCE / 01</span>
+
+          <h2>
+            إعدادات أقرب
+            <br>
+            <span class="gradient-text">إلى أسلوبك.</span>
+          </h2>
+
+          <p>
+            اختر فئة جهازك وأسلوب لعبك ومستوى خبرتك،
+            واحصل على قيم أولية قابلة للتعديل.
+            هذه القيم نقطة انطلاق للتجربة وليست ضمانًا
+            لتحقيق نتيجة محددة داخل اللعبة.
+          </p>
+
+
+          <div class="lab-note">
+            <span class="note-icon">✦</span>
+
+            <span>
+              جرّب الإعدادات في ساحة التدريب قبل اعتمادها.
+            </span>
+          </div>
+
+        </div>
+
+
+
+        <div class="lab-tool">
+
+          <div class="tool-header">
+
+            <div>
+              <span class="tool-overline">BA / CONFIGURATION</span>
+              <h3>مُنشئ الإعدادات</h3>
+            </div>
+
+            <span class="tool-status">
+              <i></i>
+              READY
+            </span>
+
+          </div>
+
+
+
+          <form id="sensitivityForm" class="sensitivity-form">
+
+            <label class="field-group">
+
+              <span>فئة الجهاز</span>
+
+              <select id="deviceClass" name="deviceClass">
+
+                <option value="entry">اقتصادي</option>
+
+                <option value="balanced" selected>
+                  متوسط
+                </option>
+
+                <option value="flagship">رائد</option>
+
+                <option value="tablet">جهاز لوحي</option>
+
+              </select>
+
+            </label>
+
+
+
+            <label class="field-group">
+
+              <span>أسلوب اللعب</span>
+
+              <select id="playStyle" name="playStyle">
+
+                <option value="steady">هادئ ودقيق</option>
+
+                <option value="balanced" selected>
+                  متوازن
+                </option>
+
+                <option value="fast">سريع الحركة</option>
+
+              </select>
+
+            </label>
+
+
+
+            <label class="field-group">
+
+              <span>مستوى الخبرة</span>
+
+              <select id="experience" name="experience">
+
+                <option value="beginner">مبتدئ</option>
+
+                <option value="intermediate" selected>
+                  متوسط
+                </option>
+
+                <option value="advanced">متقدم</option>
+
+              </select>
+
+            </label>
+
+
+
+            <button class="button button-primary generate-button"
+                    id="generateSensitivity"
+                    type="submit">
+
+              <span>إنشاء الإعدادات</span>
+              <span class="button-icon">↗</span>
+
+            </button>
+
+          </form>
+
+
+
+          <div class="settings-results" id="settingsResults" aria-live="polite">
+
+            <div class="results-heading">
+
+              <span>YOUR SUGGESTED STARTING POINT</span>
+
+              <span class="result-badge" id="resultBadge">
+                لم تُنشأ بعد
+              </span>
+
+            </div>
+
+
+
+            <div class="setting-row">
+
+              <div>
+                <span>عام</span>
+                <strong data-setting="general">—</strong>
+              </div>
+
+              <div class="setting-track">
+                <i data-track="general"></i>
+              </div>
+
+            </div>
+
+
+
+            <div class="setting-row">
+
+              <div>
+                <span>النقطة الحمراء</span>
+                <strong data-setting="redDot">—</strong>
+              </div>
+
+              <div class="setting-track">
+                <i data-track="redDot"></i>
+              </div>
+
+            </div>
+
+
+
+            <div class="setting-row">
+
+              <div>
+                <span>منظار ×2</span>
+                <strong data-setting="scope2">—</strong>
+              </div>
+
+              <div class="setting-track">
+                <i data-track="scope2"></i>
+              </div>
+
+            </div>
+
+
+
+            <div class="setting-row">
+
+              <div>
+                <span>منظار ×4</span>
+                <strong data-setting="scope4">—</strong>
+              </div>
+
+              <div class="setting-track">
+                <i data-track="scope4"></i>
+              </div>
+
+            </div>
+
+
+
+            <div class="setting-row">
+
+              <div>
+                <span>النظرة الحرة</span>
+                <strong data-setting="freeLook">—</strong>
+              </div>
+
+              <div class="setting-track">
+                <i data-track="freeLook"></i>
+              </div>
+
+            </div>
+
+
+
+            <button class="copy-settings"
+                    id="copySettings"
+                    type="button"
+                    disabled>
+
+              نسخ القيم
+
+              <span>⧉</span>
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- فلسفة الموقع -->
+    <section class="manifesto section-container">
+
+      <div class="manifesto-mark">“</div>
+
+      <span class="section-kicker">THE BLACK ARENA PHILOSOPHY</span>
+
+      <h2>
+        التفاصيل الصغيرة تصنع
+        <span class="gradient-text">تجربة مختلفة.</span>
+      </h2>
+
+      <p>
+        لا يوجد إعداد سحري يناسب الجميع.
+        افهم جهازك، جرّب خياراتك، واصنع أسلوبك بنفسك.
+      </p>
+
+      <a href="about.html" class="text-link-large">
+        اكتشف رؤيتنا <span>↗</span>
+      </a>
+
+    </section>
+
+
+
+    <!-- التواصل -->
+    <section class="community-section section-container">
+
+      <div class="community-panel">
+
+        <div class="community-symbol">✳</div>
+
+        <div class="community-copy">
+
+          <span class="section-kicker">YOUR VOICE MATTERS</span>
+
+          <h2>الفكرة القادمة قد تبدأ منك.</h2>
+
+          <p>
+            لديك اقتراح أو تريد مشاركة فكرة لتطوير الموقع؟
+            تواصل معنا وساهم في تحسين تجربة BLACK ARENA.
+          </p>
+
+        </div>
+
+        <a href="contact.html" class="button button-light">
+          <span>تواصل معنا</span>
+          <span class="button-icon">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
-  <footer class="site-footer"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"><b>B</b></span><span class="brand-copy"><strong>BLACK<span> ARENA</span></strong><small>PLAY • TUNE • LEVEL UP</small></span></a><p>صُممت للاعبين الذين يهتمون بالتفاصيل.</p></div><div class="footer-links"><strong>استكشف</strong><a href="sensitivity.html">مختبر الحساسية</a><a href="devices.html">مكتبة الأجهزة</a><a href="guides.html">دليل اللاعب</a></div><div class="footer-links"><strong>روابط مهمة</strong><a href="about.html">عن الموقع</a><a href="contact.html">تواصل معنا</a><a href="https://ff.garena.com/en/wallpaper/" target="_blank" rel="noopener noreferrer">خلفيات Free Fire الرسمية ↗</a></div><div class="footer-bottom"><span>© <span data-year></span> BLACK ARENA. جميع الحقوق محفوظة.</span><span>موقع مجتمعي غير تابع رسميًا لشركة Garena.</span></div></footer>
-</body></html>
+
+
+
+  <!-- التذييل -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand">
+
+          <span class="brand-symbol footer-symbol">
+            B
+          </span>
+
+          <span class="brand-text">
+            <strong>BLACK<span> ARENA</span></strong>
+            <small>PLAY · TUNE · LEVEL UP</small>
+          </span>
+
+        </a>
+
+        <p>
+          مساحة للاكتشاف والتجربة، صُممت للاعبين
+          الذين يهتمون بالتفاصيل.
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h3>استكشف</h3>
+
+        <a href="sensitivity.html">مختبر الحساسية</a>
+
+        <a href="aim.html">إعدادات التحكم</a>
+
+        <a href="devices.html">مكتبة الأجهزة</a>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h3>المعرفة</h3>
+
+        <a href="performance.html">دليل الأداء</a>
+
+        <a href="guides.html">دليل اللاعب</a>
+
+        <a href="about.html">عن الموقع</a>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h3>تواصل</h3>
+
+        <a href="contact.html">تواصل معنا</a>
+
+        <a href="https://ff.garena.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+          موقع Free Fire الرسمي ↗
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span data-year></span> BLACK ARENA
+      </span>
+
+      <span>
+        مشروع مجتمعي مستقل وغير تابع رسميًا لشركة Garena.
+      </span>
+
+      <a href="#siteHeader">العودة للأعلى ↑</a>
+
+    </div>
+
+  </footer>
+
+
+  <noscript>
+    <div class="noscript-notice">
+      بعض التفاعلات تحتاج إلى تفعيل JavaScript.
+    </div>
+  </noscript>
+
+</body>
+            </html>
