@@ -5,3 +5,90 @@
 @media(max-width:780px){.wrap{width:min(100% - 30px,600px)}.site-header{width:calc(100% - 24px);margin-top:10px;padding:10px 12px;top:8px;flex-wrap:wrap}.brand-mark{width:39px;height:39px}.brand-copy strong{font-size:15px}.menu-toggle{display:block;margin-right:auto}.header-cta{display:none}.main-nav{display:none;order:5;width:100%;flex-direction:column;align-items:stretch;padding-top:9px;border-top:1px solid var(--line);gap:3px}.main-nav.open{display:flex}.main-nav a{font-size:12px;padding:10px 12px}.hero{grid-template-columns:1fr;gap:25px;padding-top:52px;padding-bottom:50px;min-height:unset}.hero-copy{order:1}.hero-art{order:2;width:min(100%,510px);margin:0 auto;padding:12px 9px 18px}.hero h1{font-size:clamp(42px,10vw,62px)}.hero-description{font-size:12px}.hero-image-frame{height:360px}.float-card-top{left:-3px;top:37px}.float-card-bottom{right:-2px;bottom:35px}.orbit-one{right:0}.orbit-two{right:-30px}.section{padding-top:55px;padding-bottom:50px}.section-heading{display:block}.section-heading>p{margin-top:13px}.feature-grid{grid-template-columns:1fr}.feature-card-large{grid-column:auto;display:flex}.feature-card-large .feature-visual{height:190px;min-height:190px}.feature-card-large .feature-content{align-self:auto}.feature-card-large .card-topline{grid-column:auto}.showcase{grid-template-columns:1fr;gap:25px;padding-bottom:55px}.showcase-image{height:270px}.community-band{flex-wrap:wrap;padding:23px;margin-bottom:55px}.community-band>div:nth-child(2){min-width:calc(100% - 90px)}.community-band .btn{width:100%}.site-footer{width:calc(100% - 30px);grid-template-columns:1fr 1fr;gap:25px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:5px}.inner-page{padding-top:40px}.page-hero{margin-bottom:28px}.page-hero h1{font-size:38px}.tool-panel{padding:19px}.form-grid{grid-template-columns:1fr}.settings-results{grid-template-columns:repeat(2,1fr)}.setting-result:last-child{grid-column:1/-1}.two-col,.mini-grid,.device-grid,.performance-cards{grid-template-columns:1fr}.split-panel,.performance-hero,.guide-feature,.about-hero,.contact-layout{grid-template-columns:1fr;padding:20px;gap:22px}.hud-demo{height:270px}.device-toolbar{align-items:stretch;flex-direction:column}.search-box{max-width:none}.filter-pills{justify-content:flex-start}.device-card p{min-height:unset}.fps-visual>strong{text-align:left}.guide-feature>img{height:220px}.guide-grid{grid-template-columns:1fr}.guide-card p{min-height:unset}.about-emblem{min-height:180px}.about-hero h2{font-size:29px}.contact-copy{padding:0}.contact-copy h2{font-size:34px}.official-source{align-items:flex-start;flex-direction:column}.official-source .btn{width:100%}}
 @media(max-width:390px){.hero-image-frame{height:300px}.float-card{padding:9px 10px}.float-card strong{font-size:9px}.float-card small{font-size:7px}.settings-results{gap:7px}.setting-result{padding:12px 10px}.setting-result strong{font-size:22px}.feature-content{padding:17px}.site-footer{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-links{gap:6px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* BLACK ARENA refinement layer — preserves the original midnight / cyan / violet palette. */
+:root {
+  --line: rgba(220,229,255,.16);
+  --radius: 24px;
+  --shadow: 0 24px 70px rgba(2,5,24,.34);
+}
+[hidden] { display: none !important; }
+::selection { color: #10142b; background: var(--cyan); }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.site-header {
+  border-color: rgba(175,190,255,.2);
+  background: linear-gradient(135deg, rgba(24,30,65,.92), rgba(15,20,43,.9));
+  box-shadow: 0 15px 44px rgba(2,5,24,.24), inset 0 1px 0 rgba(255,255,255,.045);
+}
+.brand-mark {
+  border: 1px solid rgba(88,241,221,.34);
+  box-shadow: inset 0 0 0 4px rgba(255,255,255,.025), 0 0 26px rgba(88,241,221,.1);
+  position: relative;
+  overflow: hidden;
+}
+.brand-mark:after {
+  content: "";
+  position: absolute;
+  inset: auto -15% -45% 20%;
+  height: 65%;
+  background: rgba(88,241,221,.14);
+  filter: blur(12px);
+  transform: rotate(-24deg);
+  pointer-events: none;
+}
+.main-nav a { transition: color .2s ease, background .2s ease, transform .2s ease; }
+.main-nav a:hover { transform: translateY(-1px); }
+.main-nav a.active { box-shadow: inset 0 0 0 1px rgba(88,241,221,.12); }
+.header-cta, .btn { box-shadow: 0 8px 22px rgba(3,8,27,.16); transition: transform .22s ease, box-shadow .22s ease, filter .22s ease; }
+.header-cta:hover, .btn:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 14px 30px rgba(3,8,27,.26); }
+.feature-card, .info-card, .device-card, .guide-card, .tool-panel, .showcase, .community-band,
+.split-panel, .performance-hero, .guide-feature, .about-hero, .contact-note, .official-source {
+  border-color: rgba(195,207,255,.15);
+  box-shadow: 0 18px 46px rgba(1,5,22,.13), inset 0 1px 0 rgba(255,255,255,.025);
+}
+.feature-card, .info-card, .device-card, .guide-card, .social-card {
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.feature-card:hover, .info-card:hover, .device-card:hover, .guide-card:hover {
+  border-color: rgba(88,241,221,.35);
+  box-shadow: 0 22px 48px rgba(1,5,22,.24), 0 0 0 1px rgba(88,241,221,.035);
+}
+.feature-card .info-icon, .info-icon, .guide-symbol, .social-icon, .panel-symbol {
+  border: 1px solid rgba(220,229,255,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07);
+}
+input, select {
+  min-height: 48px;
+  border-color: rgba(195,207,255,.2) !important;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+input:focus, select:focus {
+  border-color: rgba(88,241,221,.65) !important;
+  box-shadow: 0 0 0 3px rgba(88,241,221,.09);
+  outline: none;
+}
+.btn:disabled { opacity: .72; cursor: wait; transform: none; }
+.setting-track { overflow: hidden; }
+.setting-track i { transition: width .65s cubic-bezier(.2,.75,.25,1); }
+.settings-results.results-ready .setting-result {
+  animation: resultRise .45s both;
+}
+.settings-results.results-ready .setting-result:nth-child(2) { animation-delay: .04s; }
+.settings-results.results-ready .setting-result:nth-child(3) { animation-delay: .08s; }
+.settings-results.results-ready .setting-result:nth-child(4) { animation-delay: .12s; }
+.settings-results.results-ready .setting-result:nth-child(5) { animation-delay: .16s; }
+@keyframes resultRise { from { opacity: .45; transform: translateY(7px); } to { opacity: 1; transform: translateY(0); } }
+.no-results { background: rgba(255,255,255,.025); }
+.site-footer { border-top-color: rgba(195,207,255,.13); }
+.social-card:hover { box-shadow: 0 15px 30px rgba(1,5,22,.2); }
+@media (max-width: 780px) {
+  .site-header { border-radius: 19px; }
+  .main-nav { padding-top: 12px; }
+  .main-nav a { border-radius: 12px; }
+  .main-nav a.active { background: rgba(88,241,221,.09); }
+  .feature-card, .info-card, .device-card, .guide-card { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .settings-results.results-ready .setting-result { animation: none; }
+}
