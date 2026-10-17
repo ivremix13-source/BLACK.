@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101a3a" />
+  <meta name="description" content="BLACK ARENA — مركز إعدادات Free Fire، الحساسية، أداء الأجهزة واختيار هاتفك القادم." />
+  <title>BLACK ARENA — العب بإعداداتك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="loader" id="loader" aria-label="جاري تحميل الموقع">
+    <div class="loader-orbit"><span class="orbit-dot"></span><div class="loader-logo"><img src="black-logo.jpg" alt="شعار BLACK ARENA"></div></div>
+    <div class="loader-title">BLACK <span>ARENA</span></div>
+    <p>ارفع مستوى لعبك</p><div class="loader-track"><span></span></div>
+  </div>
+
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="home" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark"><img src="black-logo.jpg" alt=""></span>
+        <span class="brand-copy"><b>BLACK <em>ARENA</em></b><small>FREE FIRE LAB</small></span>
+      </a>
+      <div class="side-label">مساحة اللعب</div>
+      <nav class="side-nav">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>الرئيسية</span><i></i></button>
+        <button class="nav-item" data-page="sensitivity"><span class="nav-icon">◉</span><span>مختبر الحساسية</span><i></i></button>
+        <button class="nav-item" data-page="devices"><span class="nav-icon">▣</span><span>مكتبة الأجهزة</span><i></i></button>
+        <button class="nav-item" data-page="finder"><span class="nav-icon">⌕</span><span>اختر هاتفك</span><i></i></button>
+        <button class="nav-item" data-page="performance"><span class="nav-icon">⌁</span><span>تحسين الأداء</span><i></i></button>
+      </nav>
+      <div class="sidebar-card">
+        <div class="side-card-orb">✦</div><b>جاهز للّعب؟</b>
+        <p>اضبط إعداداتك، جرّبها داخل التدريب، ثم عدّلها حسب أسلوبك.</p>
+        <button class="text-button" data-page="sensitivity">ابدأ الضبط <span>←</span></button>
+      </div>
+      <div class="sidebar-bottom"><span class="live-dot"></span><span>المختبر جاهز</span><span class="version">v1.0</span></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="mobileMenu" aria-label="فتح القائمة">☰</button>
+        <div class="breadcrumb"><span>BLACK ARENA</span><b>/</b><strong id="crumbTitle">الرئيسية</strong></div>
+        <div class="top-actions"><span class="status-pill"><i></i> مساحة اللاعب</span><button class="icon-button" id="themeHint" title="معلومة">✦</button><div class="avatar-mini"><img src="black-logo.jpg" alt="BLACK"></div></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="hero-panel">
+          <div class="hero-grid"></div><div class="hero-glow"></div>
+          <div class="hero-content">
+            <div class="eyebrow"><span class="eyebrow-line"></span> YOUR GAME. YOUR RULES.</div>
+            <h1>الفرق بين لاعب<br>عادي و<span>لاعب دقيق.</span></h1>
+            <p>مساحتك لتجربة الحساسية، فهم إمكانيات جهازك، واكتشاف إعدادات تناسب طريقة لعبك في Free Fire.</p>
+            <div class="hero-buttons"><button class="primary-button" data-page="sensitivity">اصنع إعداداتك <span>↙</span></button><button class="ghost-button" data-page="devices">استكشف الأجهزة <span>↙</span></button></div>
+            <div class="hero-proof"><div class="proof-avatars"><span>B</span><span>FF</span><span>+</span></div><div><b>مختبرك الشخصي</b><small>إعدادات قابلة للتجربة والتعديل</small></div></div>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="art-core"><span class="crosshair">⌖</span><b>BA</b><small>PRECISION LAB</small></div><div class="floating-chip chip-top"><span>◈</span> AIM CONTROL</div><div class="floating-chip chip-bottom"><span>↗</span> PERFORMANCE</div><div class="art-lines"></div></div>
+          <div class="hero-index"><span>01</span><i></i><span>04</span></div>
+        </div>
+
+        <div class="section-heading"><div><span class="section-kicker">CONTROL CENTER</span><h2>كل أدواتك في مكان واحد</h2><p>ابدأ من النقطة التي تحتاجها اليوم.</p></div><span class="heading-decoration">ARENA / 01</span></div>
+        <div class="feature-grid">
+          <button class="feature-card feature-sens" data-page="sensitivity"><span class="feature-icon">◉</span><span class="card-arrow">↙</span><small>01 / AIM LAB</small><h3>مختبر الحساسية</h3><p>أنشئ نقطة بداية حسب جهازك وطريقة لعبك، ثم خصّصها بنفسك.</p><span class="card-link">افتح المختبر <b>←</b></span><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></button>
+          <button class="feature-card feature-devices" data-page="devices"><span class="feature-icon">▣</span><span class="card-arrow">↙</span><small>02 / DEVICE INDEX</small><h3>مكتبة الأجهزة</h3><p>ابحث عن مواصفات الهواتف وقارن أهم التفاصيل قبل الاختيار.</p><span class="card-link">تصفّح المكتبة <b>←</b></span><div class="device-outline">▯</div></button>
+          <button class="feature-card feature-finder" data-page="finder"><span class="feature-icon">⌕</span><span class="card-arrow">↙</span><small>03 / SMART PICK</small><h3>اختر هاتفك القادم</h3><p>فلتر الاقتراحات حسب الميزانية والأداء والوزن والشاشة.</p><span class="card-link">اكتشف الخيارات <b>←</b></span><div class="finder-orbit"></div></button>
+        </div>
+
+        <div class="bottom-grid">
+          <div class="panel quick-panel"><div class="panel-head"><div><span class="section-kicker">QUICK START</span><h3>ضبط سريع</h3></div><span class="panel-symbol">↗</span></div><p>حدد أسلوب لعبك لتحصل على إعدادات بداية قابلة للتعديل.</p><div class="quick-options"><button data-style="balanced" class="quick-option selected"><span>◎</span><b>متوازن</b><small>للعب العام</small></button><button data-style="rush"><span>↯</span><b>هجومي</b><small>قتال قريب</small></button><button data-style="precision"><span>⌖</span><b>دقيق</b><small>تحكم أهدأ</small></button></div><button class="primary-button full-button" id="quickGenerate">أنشئ إعدادات البداية <span>←</span></button></div>
+          <div class="panel insight-panel"><div class="panel-head"><div><span class="section-kicker">ARENA INSIGHT</span><h3>قاعدة ذهبية — بدون ذهب!</h3></div><span class="insight-icon">✧</span></div><div class="insight-quote">“أفضل حساسية ليست رقماً سحرياً؛ إنها الإعداد الذي تستطيع التحكم فيه باستمرار.”</div><div class="insight-footer"><span class="live-dot"></span> جرّب في ساحة التدريب قبل اعتماد أي تغيير</div></div>
+        </div>
+        <footer class="site-footer"><span>© 2026 BLACK ARENA</span><span>صُنع للاعبين الذين يهتمون بالتفاصيل <b>✦</b></span></footer>
+      </section>
+
+      <section class="page" id="page-sensitivity">
+        <div class="page-intro"><div><span class="section-kicker">AIM & CONTROL / 02</span><h1>مختبر <span>الحساسية</span></h1><p>أنشئ إعداداً مبدئياً ثم اختبره وعدّله حسب استجابة جهازك.</p></div><div class="intro-badge">◉ <span>PERSONAL SETUP</span></div></div>
+        <div class="sensitivity-layout">
+          <div class="panel control-panel"><div class="panel-head"><div><span class="section-kicker">CONFIGURATION</span><h3>خصّص إعداداتك</h3></div><span class="step-badge">01 — 03</span></div>
+            <label class="field-label" for="sensDevice">نوع الجهاز</label><select id="sensDevice" class="field"><option value="balanced">هاتف متوسط / غير محدد</option><option value="low">هاتف اقتصادي</option><option value="high">هاتف قوي للألعاب</option><option value="tablet">جهاز لوحي</option></select>
+            <label class="field-label" for="sensStyle">أسلوب اللعب</label><select id="sensStyle" class="field"><option value="balanced">متوازن — كل المسافات</option><option value="rush">هجومي — قتال قريب</option><option value="precision">دقيق — تحكم وثبات</option><option value="sniper">قنص — حركة أهدأ</option></select>
+            <label class="field-label" for="sensGrip">طريقة الإمساك</label><div class="segmented" id="sensGrip"><button class="selected" data-grip="two">إصبعان</button><button data-grip="three">3 أصابع</button><button data-grip="four">4 أصابع+</button></div>
+            <label class="field-label" for="sensExperience">مستوى الخبرة</label><div class="range-row"><span>مبتدئ</span><input id="sensExperience" type="range" min="1" max="5" value="3"><span>متقدم</span></div>
+            <div class="note-box"><span>ⓘ</span><p>هذه قيم بداية مقترحة وليست قيماً رسمية أو مضمونة. تختلف النتيجة باختلاف تحديث اللعبة ومعدل الإطارات وطريقة لمس الشاشة.</p></div>
+            <button class="primary-button full-button" id="generateSens">إنشاء إعداداتي <span>↙</span></button>
+          </div>
+          <div class="panel results-panel"><div class="panel-head"><div><span class="section-kicker">YOUR STARTING POINT</span><h3>الإعدادات المقترحة</h3></div><span class="result-state" id="resultState">جاهز للتخصيص</span></div>
+            <div class="result-summary"><div class="result-orb">⌖</div><div><b id="resultTitle">ملف متوازن</b><p id="resultDesc">اختر خياراتك واضغط إنشاء إعداداتي.</p></div></div>
+            <div class="sensitivity-values" id="sensitivityValues">
+              <div class="sens-row"><div><span>عام</span><small>GENERAL</small></div><input type="range" min="0" max="200" value="165" data-sens="عام"><output>165</output></div>
+              <div class="sens-row"><div><span>النقطة الحمراء</span><small>RED DOT</small></div><input type="range" min="0" max="200" value="155" data-sens="النقطة الحمراء"><output>155</output></div>
+              <div class="sens-row"><div><span>منظار 2×</span><small>2X SCOPE</small></div><input type="range" min="0" max="200" value="145" data-sens="منظار 2×"><output>145</output></div>
+              <div class="sens-row"><div><span>منظار 4×</span><small>4X SCOPE</small></div><input type="range" min="0" max="200" value="130" data-sens="منظار 4×"><output>130</output></div>
+              <div class="sens-row"><div><span>منظار القنص</span><small>SNIPER SCOPE</small></div><input type="range" min="0" max="200" value="85" data-sens="منظار القنص"><output>85</output></div>
+              <div class="sens-row"><div><span>النظرة الحرة</span><small>FREE LOOK</small></div><input type="range" min="0" max="200" value="150" data-sens="النظرة الحرة"><output>150</output></div>
+            </div>
+            <div class="result-actions"><button class="primary-button" id="saveSens">حفظ الإعداد <span>＋</span></button><button class="ghost-button" id="copySens">نسخ القيم</button><button class="ghost-button" id="resetSens">إعادة الضبط</button></div>
+            <p class="micro-copy" id="sensFeedback" aria-live="polite">حرّك المؤشرات لتعديل القيم يدوياً.</p>
+          </div>
+        </div>
+        <div class="panel tip-strip"><span class="tip-icon">✦</span><div><b>طريقة اختبار ذكية</b><p>غيّر قيمة واحدة في كل مرة، وجرّب السحب والتتبع في التدريب قبل تعديل بقية القيم.</p></div><button class="text-button" data-page="performance">نصائح الأداء ←</button></div>
+      </section>
+
+      <section class="page" id="page-devices">
+        <div class="page-intro"><div><span class="section-kicker">DEVICE INDEX / 03</span><h1>مكتبة <span>الأجهزة</span></h1><p>ابحث عن هاتف أو جهاز لوحي، واستعرض المواصفات المتاحة في قاعدة البيانات المدمجة.</p></div><div class="intro-badge">▣ <span>DEVICE EXPLORER</span></div></div>
+        <div class="panel device-search-panel"><div class="search-wrap"><span>⌕</span><input id="deviceSearch" type="search" placeholder="ابحث باسم الهاتف أو الشركة أو المعالج..." autocomplete="off"><kbd>SEARCH</kbd></div><div class="filter-row"><select id="brandFilter" class="field compact-field"><option value="all">كل الشركات</option></select><select id="priceFilter" class="field compact-field"><option value="all">كل الفئات السعرية</option><option value="budget">اقتصادي</option><option value="mid">متوسط</option><option value="flagship">رائد</option></select><span class="results-count" id="deviceCount">— جهاز في القائمة</span></div></div>
+        <div class="device-grid" id="deviceGrid"></div>
+        <div class="empty-state" id="deviceEmpty" hidden><span>⌕</span><h3>لم نعثر على جهاز مطابق</h3><p>جرّب اسماً آخر أو أزل بعض الفلاتر.</p></div>
+        <div class="data-disclaimer"><span>ⓘ</span><p><b>شفافية البيانات:</b> القائمة المرفقة عينة أولية قابلة للتوسعة، وليست قاعدة شاملة لكل الهواتف. الأسعار ومعدلات FPS تختلف حسب السوق وإصدار اللعبة والإعدادات، لذلك لن نعرضها كحقائق مؤكدة دون مصدر محدث.</p></div>
+      </section>
+
+      <section class="page" id="page-finder">
+        <div class="page-intro"><div><span class="section-kicker">SMART DEVICE PICKER / 04</span><h1>اعثر على <span>هاتفك القادم</span></h1><p>اختر أولوياتك ودع المقارنة تساعدك على تضييق الخيارات.</p></div><div class="intro-badge">✧ <span>SMART MATCH</span></div></div>
+        <div class="finder-layout">
+          <div class="panel finder-controls"><div class="panel-head"><div><span class="section-kicker">YOUR PRIORITIES</span><h3>ما الذي يهمك؟</h3></div><span class="step-badge">PERSONALIZE</span></div>
+            <label class="field-label" for="budgetRange">ميزانيتك التقريبية (بالدولار)</label><div class="budget-display"><b id="budgetValue">$300</b><span>ميزانية استرشادية</span></div><input class="wide-range" type="range" id="budgetRange" min="100" max="1500" step="50" value="300">
+            <label class="field-label">الأولوية الرئيسية</label><div class="priority-list"><label><input type="radio" name="priority" value="gaming" checked><span class="priority-icon">↯</span><span><b>الألعاب والأداء</b><small>المعالج ومعدل التحديث</small></span><i></i></label><label><input type="radio" name="priority" value="light"><span class="priority-icon">◈</span><span><b>خفيف ومريح</b><small>وزن وحجم مناسب</small></span><i></i></label><label><input type="radio" name="priority" value="camera"><span class="priority-icon">▧</span><span><b>الكاميرا</b><small>التصوير اليومي</small></span><i></i></label><label><input type="radio" name="priority" value="battery"><span class="priority-icon">ϟ</span><span><b>البطارية</b><small>استخدام أطول</small></span><i></i></label></div>
+            <button class="primary-button full-button" id="findDevices">اعرض الترشيحات <span>←</span></button>
+          </div>
+          <div class="panel recommendations-panel"><div class="panel-head"><div><span class="section-kicker">MATCH RESULTS</span><h3>خيارات قد تناسبك</h3></div><span class="match-badge">SMART MATCH</span></div><div id="recommendations"><div class="recommend-placeholder"><span>✧</span><b>لنجد الجهاز المناسب</b><p>حدد الميزانية والأولوية ثم اضغط عرض الترشيحات.</p></div></div><p class="micro-copy">الترشيحات مبنية على المواصفات المتاحة داخل هذه النسخة وليست ضماناً لأداء اللعبة أو السعر الحالي.</p></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-performance">
+        <div class="page-intro"><div><span class="section-kicker">PERFORMANCE STUDIO / 05</span><h1>استخرج أفضل <span>أداء</span></h1><p>خطوات آمنة وعملية لتحسين سلاسة اللعب وتقليل التقطّع.</p></div><div class="intro-badge">⌁ <span>STABILITY FIRST</span></div></div>
+        <div class="performance-banner"><div><span class="section-kicker">STABLE FPS > BIG NUMBERS</span><h2>الثبات أهم من الرقم الأعلى.</h2><p>ابدأ بإعدادات يمكن لجهازك تشغيلها باستقرار، ثم ارفع الجودة تدريجياً إذا بقي الأداء سلساً.</p></div><div class="performance-gauge"><div><b>FPS</b><small>STABILITY</small></div></div></div>
+        <div class="section-heading"><div><span class="section-kicker">FIELD GUIDE</span><h2>قائمة تحسين الأداء</h2><p>علّم الخطوات التي جرّبتها لتتابع تقدمك.</p></div><span class="progress-label" id="taskProgress">0 / 6 مكتملة</span></div>
+        <div class="checklist" id="performanceChecklist">
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>اختر معدل الإطارات الأكثر استقراراً</b><small>لا تستخدم أعلى خيار إذا كان يسبب تقطّعاً أو سخونة ملحوظة.</small></span><em>01</em></label>
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>أغلق التطبيقات غير الضرورية</b><small>حرّر الذاكرة قبل اللعب، وتجنب أدوات التنظيف المشبوهة.</small></span><em>02</em></label>
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>اترك مساحة تخزين كافية</b><small>امتلاء التخزين قد يؤثر في سلاسة النظام والتحديثات.</small></span><em>03</em></label>
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>حدّث اللعبة والنظام من المصادر الرسمية</b><small>التحديثات قد تتضمن تحسينات أو إصلاحات للأداء.</small></span><em>04</em></label>
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>تجنّب اللعب أثناء الشحن إذا ارتفعت الحرارة</b><small>الحرارة المرتفعة قد تؤدي إلى خفض الأداء تلقائياً.</small></span><em>05</em></label>
+          <label class="check-item"><input type="checkbox"><span class="check-box">✓</span><span><b>اختبر الشبكة قبل تغيير الحساسية</b><small>التأخير الشبكي لا يُحلّ برفع الحساسية أو تثبيت تطبيقات مجهولة.</small></span><em>06</em></label>
+        </div>
+        <div class="safety-note"><span>⌑</span><div><b>تنبيه مهم</b><p>لا تستخدم ملفات تعديل اللعبة أو أدوات تدّعي فتح FPS أو DPI بلا حدود. قد تعرض حسابك أو جهازك للخطر، ولا يوجد إعداد واحد يضمن الفوز.</p></div></div>
+      </section>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
